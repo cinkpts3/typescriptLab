@@ -59,6 +59,7 @@ function sortColleagues(
 // Test invocations
 console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
 console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
+console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length)));
 
 function addInterest(friend: Friend, interest: string): string[] {
   if (friend.interests === undefined) {
